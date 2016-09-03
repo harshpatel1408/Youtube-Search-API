@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Youtube API</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="CSS/jquery.fancybox-buttons.css">
+	<link rel="stylesheet" type="text/css" href="CSS/jquery.fancybox-thumbs.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="JS/Script.js"></script>
+	<script type="text/javascript" src="JS/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="JS/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="JS/jquery.fancybox-buttons.js"></script>
+	<script type="text/javascript" src="JS/jquery.fancybox-media.js"></script>
+	<script type="text/javascript" src="JS/jquery.fancybox-thumbs.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.fancybox').fancybox();
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>search <span>video</span></h1>
+			<p>Search all youtube video</p>
+		</header>
+		<section>
+			<form name="search-form" id="search-form" onsubmit="return search()">
+				<div class="fieldcontainer">
+					<input type="search" id="query" class="search-field" placeholder="search here">
+					<input type="submit" name="search-btn" id="search-btn" value="">
+				</div>
+			</form>
+			<ul id="results"></ul>
+			<div id="buttons"></div>
+		</section>
+		<footer>
+			<p>copyright &copy; 2016, All right reserved</p>
+		</footer>
+	</div>
+</body>
+</html>
