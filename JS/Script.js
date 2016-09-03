@@ -23,7 +23,7 @@ function search(token, q) {
 			q: q,
 			pageToken: token,
 			type: 'video',
-			key: 'AIzaSyCH0i8znvwIBCWC_nZgFr8rmaUOW6AH1Hs' 
+			key: 'AIzaSyBnJBfGjTZ5Jw2HjHCDfwu3' //Enter your key here (This is fake key)
 			},
 			function(data){ 
 				var nextPageToken = data.nextPageToken;
